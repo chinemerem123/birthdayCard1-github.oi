@@ -1,0 +1,325 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: white;
+}
+
+.container {
+  max-width: 95%;
+  background-color: #ffebef;
+  position: relative;
+  left: calc(50% - 47.5%);
+}
+
+.step {
+  position: relative;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.step .col1 {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.step .col1 img {
+  width: 50%;
+  height: 400px;
+  margin-top: 110px;
+}
+
+.step .col2 {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.step .col2 h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.step .col2 p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #5a5a5a;
+}
+
+.step .book {
+  position: relative;
+  width: 55%;
+  left: calc(50% - 27.5%);
+  height: 450px;
+  background-color: white;
+  padding: 5px;
+  -webkit-box-shadow: 5px 3px 5px lightgray, -5px -3px 5px #b1b1b1;
+          box-shadow: 5px 3px 5px lightgray, -5px -3px 5px #b1b1b1;
+  margin-top: 20px;
+}
+
+.step #book {
+  position: relative;
+  width: 55%;
+  left: calc(50% - 27.5%);
+  height: 450px;
+  background-color: white;
+  padding: 5px;
+  -webkit-box-shadow: 5px 3px 5px lightgray;
+          box-shadow: 5px 3px 5px lightgray;
+  margin-top: 20px;
+}
+
+.step #book::before {
+  content: " ";
+  position: absolute;
+  width: 56%;
+  height: 490px;
+  margin-top: -20px;
+  background-color: #e6e6e6;
+  -webkit-transform: skewY(2deg) perspective(1000px) rotateY(45deg);
+          transform: skewY(2deg) perspective(1000px) rotateY(45deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  left: -170px;
+}
+
+.step #book-left {
+  position: relative;
+  width: 55%;
+  left: calc(50% - 40.5%);
+  height: 450px;
+  background-color: white;
+  padding: 5px;
+  -webkit-box-shadow: -5px -3px 5px lightgray;
+          box-shadow: -5px -3px 5px lightgray;
+  margin-top: 30px;
+}
+
+.step #book-left::before {
+  content: " ";
+  position: absolute;
+  width: 230px;
+  height: 495px;
+  margin-top: -20px;
+  background-color: #e6e6e6;
+  -webkit-transform: skewY(2deg) perspective(1000px) rotateY(-45deg);
+          transform: skewY(2deg) perspective(1000px) rotateY(-45deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  right: -190px;
+}
+
+.step textarea {
+  width: 80%;
+  padding: 5px;
+  margin-top: 100px;
+  border-color: #f8667f;
+  border-style: dotted;
+  border-width: 2px;
+  outline: none;
+}
+
+.step span {
+  position: absolute;
+  width: 30px;
+  height: 25px;
+  padding: 5px;
+  color: white;
+  background-color: #ff425b;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 17%;
+}
+
+.step .fc {
+  position: relative;
+  top: 30px;
+  padding: 10px;
+}
+
+.step .fc div {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: -20px;
+}
+
+.step .fc div input {
+  width: 80px;
+  position: absolute;
+  margin-left: 10px;
+}
+
+.step .fc button {
+  padding: 5px;
+  width: 190px;
+  color: white;
+  background-color: #ff425b;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+.last {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.last .head {
+  padding: 10px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.last .head h1 {
+  text-transform: uppercase;
+}
+
+.last .head p {
+  color: #5a5a5a;
+  margin-top: 10px;
+}
+
+.last .text-input {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 60px;
+  text-align: center;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.last .text-input p {
+  font-size: 30px;
+  position: relative;
+  margin-left: 20%;
+  margin-top: 30px;
+}
+
+.last .text-input textarea {
+  position: relative;
+  height: 60px;
+  width: 40%;
+  background-color: transparent;
+  border-color: #f8667f;
+  border-style: dotted;
+  border-width: 2px;
+  outline: none;
+  padding: 10px 5px;
+  left: 15px;
+}
+
+.last .text-input span {
+  position: absolute;
+  width: 30px;
+  height: 25px;
+  padding: 5px;
+  background-color: pink;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  left: 37%;
+  top: -25%;
+  z-index: 1;
+}
+
+#last-step .col1 #book {
+  left: calc(50% - 20%);
+}
+
+.eqs {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.eqs button {
+  width: 20%;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: #ff425b;
+  font-size: 17px;
+  padding: 8px;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+.eqs #add-cart {
+  background-color: #cc2c46;
+  font-weight: bold;
+  width: 25%;
+}
+
+@media screen and (max-width: 550px) {
+  .step {
+    display: block;
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+  }
+  .step .col2 p {
+    padding: 15px;
+  }
+  .step .book {
+    width: 80%;
+    left: calc(50% - 40%);
+  }
+  .step #book {
+    left: calc(50% - 19.5%);
+  }
+  .step #book::before {
+    content: " ";
+    left: -80px;
+  }
+  .step #book-left {
+    left: calc(50% - 39.5%);
+  }
+  .step #book-left::before {
+    content: " ";
+    right: -95px;
+    width: 55%;
+    height: 475px;
+    top: 10px;
+  }
+  .fc {
+    position: relative;
+    left: -10%;
+  }
+  .fc button {
+    position: relative;
+    left: 40px;
+  }
+  .last .text-input p {
+    font-size: 18px;
+    margin-left: 9px;
+    font-weight: bold;
+  }
+  .last .text-input textarea {
+    height: 40px;
+    width: 45%;
+  }
+  .last .text-input span {
+    left: 41%;
+    top: -20px;
+  }
+  .eqs button {
+    font-size: 14px;
+    font-weight: bold;
+    width: 40%;
+    margin-top: 10px;
+  }
+  .eqs #add-cart {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
